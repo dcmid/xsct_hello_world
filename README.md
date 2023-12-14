@@ -8,3 +8,5 @@ To run the hello world program, just execute:
 
 ## Notes
 This project is configured to run on the Xona fpga-dev-station with one RFSoC_4x2 connected. Behavior with multiple boards connected has not been tested.
+
+The Hello World output will be output over serial, so you will need to use a serial monitor such as minicom or putty to view it.
