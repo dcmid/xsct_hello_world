@@ -4,7 +4,7 @@ PSU_INIT := $(WORK_DIR)/rfsoc4x2_r5_standalone/hw/psu_init.tcl
 ELF := $(WORK_DIR)/hello_r5/Debug/hello_r5.elf
 
 
-$(FSBL) $(PSU_INIT) $(ELF): hw/RFSoC_4x2-0x00000000-20231213110530-darren-dev-ab7cab6.xsa | $(WORK_DIR)
+$(FSBL) $(PSU_INIT) $(ELF): hw/RFSoC_4x2.xsa | $(WORK_DIR)
 	xsct tcl/build.tcl
 
 debug: $(FSBL) $(PSU_INIT) $(ELF) | $(WORK_DIR) 

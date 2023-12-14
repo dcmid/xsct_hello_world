@@ -4,7 +4,7 @@ setws "$origin_dir/../build"
 
 connect
 target -set -filter {name =~ "PL"}
-fpga "[getws]/../hw/RFSoC_4x2-0x00000000-20231213110530-darren-dev-ab7cab6.bit"
+fpga "[getws]/../hw/RFSoC_4x2.bit"
 
 target -set -filter {name =~ "Cortex-R5 #0"}
 rst -processor
